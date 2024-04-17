@@ -61,7 +61,7 @@ if __name__ == '__main__':
         print_nametag(input("Please format your nametag: "), new_person)
     elif choice == "2":
         urlib_version = input("Choose version of urllib: ")
-        while (urlib_version != "2" and urlib_version != "3"):
+        while urlib_version not in ('2', '3'):
             urlib_version = input("Choose version of urllib (2 or 3): ")
         fetch_website(urlib_version, url="https://www.google.com")
     elif choice == "3":
